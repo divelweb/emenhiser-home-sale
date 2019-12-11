@@ -2023,3 +2023,110 @@ footer .credits {
     font-size: 1.3rem;
   }
 }
+
+
+/* Other stylesheet
+
+/* Blocks */
+.intro-section {
+  position: relative; }
+  .intro-section, .intro-section .container > .row {
+    height: 100vh;
+    min-height: 900px; }
+  .intro-section.single-cover, .intro-section.single-cover .container > .row {
+    height: 50vh;
+    min-height: 400px; }
+  .intro-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem; }
+  .intro-section p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem; }
+
+.img-absolute {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .img-absolute img {
+    max-width: 600px;
+    -webkit-box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4); }
+    @media (max-width: 991.98px) {
+      .img-absolute img {
+        max-width: 100%; } }
+
+.slide-1 {
+  background-size: cover;
+  background-position: center; }
+  .slide-1:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #343a40;
+    opacity: .9;
+    border-bottom-right-radius: 0px; }
+    @media (max-width: 991.98px) {
+      .slide-1:before {
+        width: 100%; } }
+  .slide-1 .slide-text {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out; }
+    .slide-1 .slide-text.active {
+      opacity: 1;
+      visibility: visible;
+      margin-top: 0px; }
+
+.form-box {
+  padding: 40px;
+  background: #fff;
+  border-radius: 7px; }
+
+.site-section {
+  padding: 4em 0;
+  position: relative; }
+  @media (max-width: 991.98px) {
+    .site-section {
+      padding: 4em 0; } }
+
+.cta a span {
+  border-color: #7971ea;
+  padding: 14px 20px;
+  color: #fff;
+  background: #7971ea;
+  border-radius: 30px;
+  font-size: .7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  .is-sticky .cta a span {
+    color: #fff; }
+
+.cta a:hover span {
+  background: #4f45e3;
+  color: #fff; }
+
+.cta a.active {
+  border-bottom: none; }
+  .cta a.active > span {
+    background-color: #1c4b82;
+    color: #fff; }
+
+.section-sub-title {
+  color: #7971ea;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1.5rem; }
